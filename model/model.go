@@ -18,7 +18,7 @@ type Goly struct {
 }
 
 func Setup() {
-	dsn := "host=localhost user=postgres password=123 dbname=url_storage port=5432 sslmode=disable"
+	dsn := "host=localhost user= password= dbname= port= sslmode=disable"
 	var err error
 	db, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
